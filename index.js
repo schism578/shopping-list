@@ -23,10 +23,10 @@ $(function makeList() {
         });
     
             $(".shopping-list").on("click", ".shopping-item-delete", function(event) {
-            $(event.currentTarget).closest("li").remove();
+            $(this).closest("li").remove();
             });
           
             $(".shopping-list").on("click", ".shopping-item-toggle", function(event) {
-            $(event.currentTarget).closest("li").find(".shopping-item").toggleClass("shopping-item__checked");
+            $(this).closest("li").find(".shopping-item").toggleClass("shopping-item__checked");
             });
     });
