@@ -4,8 +4,8 @@ $(function makeList() {
     $("#js-shopping-list-form").submit(function(event) {
         event.preventDefault();
 
-    const addItem = $(".js-shopping-list-entry").val();
-        $(".js-shopping-list-entry").val("");
+    const addItem = $("#shopping-list-entry").val();
+        $("#shopping-list-entry").val("");
     
         $(".shopping-list").append(
             `<li>
